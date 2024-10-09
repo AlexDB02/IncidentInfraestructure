@@ -1,24 +1,24 @@
 module "dev_vm" {
   source = "../../modules/vm"
   environment = "dev"
-  mail_secret_key = var.mail_secret_key
-  mail_user = var.mail_user
+  mail_secret_key = var.MAIL_SECRET_KEY
+  mail_user = var.MAIL_USER
   admin_username = "adminuser"
-  domain = var.domain
+  domain = var.DOMAIN
   resource_group = "IN-RG-Alejandro"
   nic_name = "IN-NIC-Alejandro"
-  mail_service = var.mail_service
+  mail_service = var.MAIL_SERVICE
   security_group_name = "IN-SG-Alejandro"
   ssh_key_path = "./keys/712incident_server"
-  port = var.port
+  port = var.PORT
   server_name = "IN-Server-Alejandro"
-  mongo_url = var.mongo_url
-  location = "eastus2"
-  mapbox_access_token = var.mapbox_access_token
-  mongo_initdb_root_password = var.mongo_initdb_root_password
-  mongo_initdb_root_username = var.mongo_initdb_root_username
-  ip_name = "IN-IP-Alejandro"
-  vnet_name = "IN-VNET-Alejandro"
-  mongo_url_docker = var.mongo_url_docker
+  mongo_url = var.MONGO_URL
   subnet_name = "IN-Subnet-Alejandro"
+  mongo_initdb_root_username = var.MONGO_INITDB_ROOT_USERNAME
+  mongo_initdb_root_password = var.MONGO_INITDB_ROOT_PASSWORD
+  mongo_url_docker = var.MONGO_URL_DOCKER
+  location = var.LOCATION
+  ip_name = "IN-IP-Alejandro"
+  vnet_name = "IN-Vnet-Alejandro"
+  mapbox_access_token = var.MAPBOX_ACCESS_TOKEN
 }

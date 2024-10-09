@@ -66,10 +66,6 @@ variable "mail_user" {
   type = string
 }
 
-variable "mongo_url" {
-  type = string
-}
-
 variable "domain" {
   type = string
 }

@@ -5,6 +5,13 @@ terraform {
       version = "3.0.0"
     }
   }
+
+  backend "azurerm" {
+    resource_group_name = "tfstateRGMelanieGNG"
+    storage_account_name = "tfstatemelanie"
+    container_name = "712alejandro-diaz"
+    key = "terraform.tfstate"
+  }
 }
 
 provider "azurerm" {

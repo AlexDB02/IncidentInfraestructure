@@ -2,7 +2,7 @@ variable "resource_group" {
   type = string
 }
 
-variable "location" {
+variable "LOCATION" {
   type = string
 }
 
@@ -42,50 +42,42 @@ variable "admin_username" {
   type = string
 }
 
-variable "mongo_url" {
+variable "PORT" {
   type = string
 }
 
-variable "port" {
+variable "MAIL_SECRET_KEY" {
   type = string
 }
 
-variable "mail_secret_key" {
+variable "MAPBOX_ACCESS_TOKEN" {
   type = string
 }
 
-variable "mapbox_access_token" {
+variable "MAIL_SERVICE" {
   type = string
 }
 
-variable "mail_service" {
+variable "MAIL_USER" {
   type = string
 }
 
-variable "mail_user" {
+variable "MONGO_URL" {
   type = string
 }
 
-variable "mongo_url" {
+variable "DOMAIN" {
   type = string
 }
 
-variable "domain" {
+variable "MONGO_INITDB_ROOT_PASSWORD" {
   type = string
 }
 
-variable "mongo_initdb_root_password" {
+variable "MONGO_INITDB_ROOT_USERNAME" {
   type = string
 }
 
-variable "mongo_initdb_root_username" {
-  type = string
-}
-
-variable "domain" {
-  type = string
-}
-
-variable "mongo_url_docker" {
+variable "MONGO_URL_DOCKER" {
   type = string
 }
