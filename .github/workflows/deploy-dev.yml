@@ -17,8 +17,8 @@ env:
   TF_VAR_mail_secret_key: "${{ secrets.TF_VAR_MAIL_SECRET_KEY }}" 
   TF_VAR_mail_user: "${{secrets.TF_VAR_MAIL_USER}}" 
   TF_VAR_mapbox_access_token: "${{ secrets.TF_VAR_MAPBOX_ACCESS_TOKEN }}" 
-  TF_VAR_mongo_init_root_username: "${{ secrets.TF_VAR_MONGO_INIT_ROOT_USERNAME }}"  
-  TF_VAR_mongo_init_root_password: "${{ secrets.TF_VAR_MONGO_INIT_ROOT_PASSWORD }}"  
+  TF_VAR_mongo_init_root_username: "${{ secrets.TF_VAR_MONGO_INITDB_ROOT_USERNAME }}"  
+  TF_VAR_mongo_init_root_password: "${{ secrets.TF_VAR_MONGO_INITDB_ROOT_PASSWORD }}"  
   TF_VAR_domain: "${{secrets.TF_VAR_DOMAIN}}"
 
 jobs:
